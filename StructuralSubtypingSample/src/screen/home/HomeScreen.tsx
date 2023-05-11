@@ -14,7 +14,7 @@ type Props = {
  * @package
  */
 export const HomeScreen: React.FC<Props> = ({uiModels}) => (
-  <FlatList
+  <FlatList<HomeScreenUiModel>
     style={styles.container}
     data={uiModels}
     renderItem={item => <HomeScreenUiModelBinder item={item.item} />}
