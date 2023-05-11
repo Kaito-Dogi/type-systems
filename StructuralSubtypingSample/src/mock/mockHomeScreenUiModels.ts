@@ -10,7 +10,7 @@ export const mockHomeScreenUiModel: HomeScreenUiModel[] = [
   {id: 'l1', type: 'large', text: 'large'},
   {id: 'i3', type: 'item', text: 'item'},
   {id: 'm2', type: 'multi-column', texts: ['column1', 'column2']},
-  {id: 'i5', type: 'item', text: 'item'},
+  {id: 'i4', type: 'item', text: 'item'},
   {id: 'm3', type: 'multi-column', texts: ['column1', 'column2', 'column3']},
-  {id: 'i6', type: 'item', text: 'item'},
+  {id: 'i5', type: 'item', text: 'item'},
 ];
