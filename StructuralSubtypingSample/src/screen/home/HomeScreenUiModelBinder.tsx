@@ -1,8 +1,8 @@
 import React from 'react';
-import {LargeListItem} from 'src/component/LargeListItem';
-import {ListItem} from 'src/component/ListItem';
-import {MultiColumnListItem} from 'src/component/MultiColumnListItem';
 
+import {LargeListItem} from './LargeListItem';
+import {ListItem} from './ListItem';
+import {MultiColumnListItem} from './MultiColumnListItem';
 import {HomeScreenUiModel} from './uiModel';
 
 type Props = {

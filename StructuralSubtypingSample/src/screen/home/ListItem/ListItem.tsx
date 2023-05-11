@@ -1,5 +1,6 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {View} from 'react-native';
+import {BaseText} from 'src/component/BaseText';
 
 import {styles} from './styles';
 
@@ -12,6 +13,6 @@ type Props = {
  */
 export const ListItem: React.FC<Props> = ({text}) => (
   <View style={styles.container}>
-    <Text style={styles.text}>{text}</Text>
+    <BaseText>{text}</BaseText>
   </View>
 );

@@ -8,12 +8,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     width: '100%',
-    aspectRatio: 1 / 1,
-    backgroundColor: 'red',
-  },
-  text: {
-    fontSize: 16,
-    lineHeight: 24,
-    color: 'white',
+    height: 64,
+    backgroundColor: 'lime',
   },
 });

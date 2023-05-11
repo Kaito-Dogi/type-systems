@@ -1,8 +1,9 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {View} from 'react-native';
+import {BaseText} from 'src/component/BaseText';
+import {Spacer} from 'src/component/Spacer';
 import {spacing} from 'src/style/spacing';
 
-import {Spacer} from '../Spacer';
 import {styles} from './styles';
 
 type Props = {
@@ -18,7 +19,7 @@ export const MultiColumnListItem: React.FC<Props> = ({texts}) => (
       return (
         <>
           <View style={styles.columnItem}>
-            <Text style={styles.text}>{text}</Text>
+            <BaseText>{text}</BaseText>
           </View>
           {index < texts.length - 1 && (
             <Spacer spacing={spacing.md} direction="vertical" />
