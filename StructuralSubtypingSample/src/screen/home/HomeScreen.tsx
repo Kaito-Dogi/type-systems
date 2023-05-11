@@ -19,6 +19,8 @@ export const HomeScreen: React.FC<Props> = ({uiModels}) => (
     data={uiModels}
     renderItem={item => <HomeScreenUiModelBinder item={item.item} />}
     keyExtractor={item => item.id}
-    ItemSeparatorComponent={() => <Spacer spacing={16} direction="vertical" />}
+    ItemSeparatorComponent={() => (
+      <Spacer spacing={16} direction="horizontal" />
+    )}
   />
 );

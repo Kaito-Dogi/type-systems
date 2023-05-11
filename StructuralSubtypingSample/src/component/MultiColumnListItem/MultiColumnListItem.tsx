@@ -20,7 +20,7 @@ export const MultiColumnListItem: React.FC<Props> = ({texts}) => (
             <Text style={styles.text}>{text}</Text>
           </View>
           {index < texts.length - 1 && (
-            <Spacer spacing={16} direction="horizontal" />
+            <Spacer spacing={16} direction="vertical" />
           )}
         </>
       );

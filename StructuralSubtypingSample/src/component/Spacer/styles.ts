@@ -2,12 +2,12 @@
  * @package
  */
 export const horizontal = (spacing: number) => ({
-  width: spacing,
+  height: spacing,
 });
 
 /**
  * @package
  */
 export const vertical = (spacing: number) => ({
-  height: spacing,
+  width: spacing,
 });
