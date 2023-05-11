@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     aspectRatio: 1 / 1,
-    backgroundColor: 'skyblue',
+    backgroundColor: 'cyan',
   },
   text: {
     fontSize: 16,
