@@ -1,5 +1,6 @@
 import React from 'react';
 import {Text, View} from 'react-native';
+import {spacing} from 'src/style/spacing';
 
 import {Spacer} from '../Spacer';
 import {styles} from './styles';
@@ -20,7 +21,7 @@ export const MultiColumnListItem: React.FC<Props> = ({texts}) => (
             <Text style={styles.text}>{text}</Text>
           </View>
           {index < texts.length - 1 && (
-            <Spacer spacing={16} direction="vertical" />
+            <Spacer spacing={spacing.md} direction="vertical" />
           )}
         </>
       );

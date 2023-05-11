@@ -1,6 +1,7 @@
 import React from 'react';
 import {FlatList} from 'react-native';
 import {Spacer} from 'src/component/Spacer';
+import {spacing} from 'src/style/spacing';
 
 import {HomeScreenUiModelBinder} from './HomeScreenUiModelBinder';
 import {styles} from './styles';
@@ -20,7 +21,7 @@ export const HomeScreen: React.FC<Props> = ({uiModels}) => (
     renderItem={item => <HomeScreenUiModelBinder item={item.item} />}
     keyExtractor={item => item.id}
     ItemSeparatorComponent={() => (
-      <Spacer spacing={16} direction="horizontal" />
+      <Spacer spacing={spacing.md} direction="horizontal" />
     )}
   />
 );

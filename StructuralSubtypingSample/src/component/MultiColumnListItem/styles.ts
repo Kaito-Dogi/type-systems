@@ -1,4 +1,5 @@
 import {StyleSheet} from 'react-native';
+import {spacing} from 'src/style/spacing';
 
 /**
  * @package
@@ -10,7 +11,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     width: '100%',
     backgroundColor: 'blue',
-    padding: 16,
+    padding: spacing.md,
   },
   columnItem: {
     flex: 1,
