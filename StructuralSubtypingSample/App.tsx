@@ -1,7 +1,6 @@
 import React from 'react';
 import {SafeAreaView} from 'react-native';
-
-import {HomeScreen} from './src/screen/home/HomeScreen';
+import {HomeScreen} from 'src/screen/home';
 
 const App = (): JSX.Element => {
   return (
