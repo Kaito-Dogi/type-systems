@@ -1,18 +1,19 @@
 import React from 'react';
-import {View} from 'react-native';
-import {LargeListItem} from 'src/component/LargeListItem';
-import {ListItem} from 'src/component/ListItem';
-import {MultiColumnListItem} from 'src/component/MultiColumnListItem';
+import {FlatList, View} from 'react-native';
 
+import {HomeScreenUiModelBinder} from './HomeScreenUiModelBinder';
 import {styles} from './styles';
+import {HomeScreenUiModel} from './uiModel';
+
+type Props = {
+  uiModels: HomeScreenUiModel[];
+};
 
 /**
  * @package
  */
-export const HomeScreen: React.FC = () => (
+export const HomeScreen: React.FC<Props> = ({uiModels}) => (
   <View style={styles.container}>
-    <LargeListItem text="L" />
-    <ListItem text="N" />
-    <MultiColumnListItem texts={['M1', 'M2']} />
+    <FlatList data={uiModels} renderItem={HomeScreenUiModelBinder} />
   </View>
 );
