@@ -1,5 +1,6 @@
 import React from 'react';
-import {FlatList, View} from 'react-native';
+import {FlatList} from 'react-native';
+import {Spacer} from 'src/component/Spacer';
 
 import {HomeScreenUiModelBinder} from './HomeScreenUiModelBinder';
 import {styles} from './styles';
@@ -13,7 +14,10 @@ type Props = {
  * @package
  */
 export const HomeScreen: React.FC<Props> = ({uiModels}) => (
-  <View style={styles.container}>
-    <FlatList data={uiModels} renderItem={HomeScreenUiModelBinder} />
-  </View>
+  <FlatList
+    style={styles.container}
+    data={uiModels}
+    renderItem={item => <HomeScreenUiModelBinder item={item.item} />}
+    ItemSeparatorComponent={() => <Spacer spacing={16} direction="vertical" />}
+  />
 );
